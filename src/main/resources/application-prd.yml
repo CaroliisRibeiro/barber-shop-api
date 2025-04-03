@@ -1,13 +1,24 @@
-#application-prd.yml (usado com banco PostgreSQL na Railway)
 spring:
   config:
     activate:
       on-profile: prd
+
   datasource:
     url: jdbc:postgresql://shinkansen.proxy.rlwy.net:20055/railway
     username: postgres
     password: edfryoiNyhogbwigMAnCqrMoMvFxtFbO
+    driver-class-name: org.postgresql.Driver
+
   jpa:
-    show-sql: false
     hibernate:
       ddl-auto: validate
+    show-sql: false
+
+  flyway:
+    enabled: true
+
+  devtools:
+    remote:
+      secret: 123
+    restart:
+      trigger-file: trigger.txt
