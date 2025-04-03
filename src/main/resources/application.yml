@@ -1,3 +1,4 @@
+# application.yml (base comum para todos os perfis)
 spring:
   application:
     name: barber-shop-api
@@ -8,3 +9,13 @@ spring:
   jpa:
     hibernate:
       ddl-auto: validate
+    properties:
+      hibernate:
+        format_sql: true
+  flyway:
+    enabled: true
+  devtools:
+    remote:
+      secret: 123
+    restart:
+      trigger-file: trigger.txt
