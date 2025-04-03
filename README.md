@@ -34,6 +34,10 @@ Antes de iniciar o projeto, é recomendado ter conhecimentos prévios em:
 
 ---
 
+## 🔗 Link UI: 
+https://github.com/CaroliisRibeiro/barbe-shop-ui
+
+---
 ## 🎯 Objetivos e Resultados Esperados
 
 Ao final do projeto, você será capaz de:
